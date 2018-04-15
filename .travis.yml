@@ -1,0 +1,10 @@
+language: ruby
+rvm:
+  - 2.5.1
+
+before_install:
+  - gem update --system
+  - gem pristine bundler
+  
+script:
+  - bundle exec rake toc
